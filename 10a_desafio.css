@@ -1,32 +1,31 @@
-/* === DESAFIO TECHNEWS - PORTAL MODERNO === */
+/* === DESAFIO TECHNEWS = PORTAL MODERNO === */
 
-*{
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: #0a0e27;
     color: #e4e4e7;
     line-height: 1.6;
 }
 
-/* Header com glassmorphism */
+/* header com glassmorphism */
 .cabecalho {
-    background: linear-gradient(135deg, rgba(99,102,241,0.1)), rgba(219,39,119,0.1);
+    background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(219,39,119,0.1));
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255,255,255,0.1);
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 36px;
     background: linear-gradient(90deg, #6366f1, #db2777);
     -webkit-background-clip: text;
@@ -39,27 +38,28 @@ body {
     margin-top: 10px;
 }
 
-/* Layout principal com Grid */
+/* layout principal com grid */
 .conteudo {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
     max-width: 800px;
+    padding: 0 20px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-/* Artigo com card moderno */
+/* artigo com card moderno */
 .artigo-destaque {
-background: linear-gradient(135deg, #1e293b, #334155);
-padding: 30px;
-border-radius: 20px;
-border: 1px solid rgba(255,255,255,0.1);
-transition: transform 0.3s;
+    background: linear-gradient(135deg, #1e293b, #334155);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: transform 0.3;
 }
 
-.artigo-destaque:houver {
-transform: translateY(-5px);
+.artigo-destaque:hover {
+    transform: translateY(-5px);
 }
 
 .artigo-destaque h2 {
@@ -69,12 +69,12 @@ transform: translateY(-5px);
 
 .data {
     color: #64748b;
-    margin-bottom: 14px;
+    font-size: 14px;
 }
 
 .leia-mais {
     margin-top: 15px;
-    cursor: pointer;
+    cursor: pointer;   
 }
 
 .leia-mais summary {
@@ -82,7 +82,7 @@ transform: translateY(-5px);
     font-weight: bold;
 }
 
-/* Secao de video */
+/* secao de video */
 .secao-video {
     text-align: center;
 }
@@ -90,60 +90,57 @@ transform: translateY(-5px);
 .video-embed {
     border-radius: 15px;
     border: 2px solid #6366f1;
-    margin-top: 15px;
 }
 
-/* Newsletter com gradiente */
+/* newsletter com gradiente */
 .secao-newsletter {
     background: linear-gradient(135deg, #6366f1, #8b5cf6);
     padding: 30px;
     border-radius: 20px;
 }
 
-.form-newletter input,
-.form-newletter select {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
-  color: white;
+.form-newsletter input,
+.form-newsletter select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    color: white;  
 }
 
 .checkbox-container {
-  margin: 15px 0;
+    margin: 15px 0;
 }
 
 .btn-inscrever {
-  width: 100%;
-  padding: 12px;
-  background: linear-gradient(90deg, #f59e0b, #ef4444);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #f59e0b, #ef4444);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
 .btn-inscrever:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* Footer minimalista */
 .rodape {
-text-align: center;
-  padding: 40px 20px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #64748b;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #64748b;
 }
 
 .rodape a {
-  color: #60a5fa;
+    color: #3b82f6;
 }
 
 /* Responsividade */
