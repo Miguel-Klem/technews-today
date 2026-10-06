@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech News Today - Portal de Tecnologia</title>
+    <link rel="stylesheet" href="/10a_desafio.css">    
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="logo">📱 TechNews Today</h1>
+        <p class="tagline">As <strong>últimas notícias</strong> do mundo <em>tech</em></p>
+    </header>
+
+    <main class="conteudo">
+        <article class="artigo-destaque">
+            <h2>🚀 IA Revoluciona Desenvolvimento</h2>
+            <time datetime="2026-06-10" class="data">10 de outubro de 2026</time>
+            <p>Inteligência Artificial está transformando comocriamos softwares...</p>
+
+            <details class="leia-mais">
+                <summary>Leia mais &rarr;</summary>
+                <p>Chat GPT e outras ferramentas estão mudando o cenário tech mundial.</p>
+            </details>
+        </article>
+
+        <section class="secao-video">
+            <h3>📺 Tech em Vídeo</h3>
+            <iframe class="video-embed" width="300" height="200" 
+            src="https://www.youtube.com/embed/eqUFcr1mI3Y"
+            title="Tech News Vídeo">
+            </iframe>
+        </section>
+
+        <section class="secao-newletter">
+            <h3>📧 Newsletter</h3>
+            <form action="subscribe.php" method="POST" class="form-newsletter">
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="interesse">Área de Interesse: </label>
+                <select id="interesse" name="interesse" required>
+                    <option value="ia">Inteligência Artificial</option>
+                    <option value="mobile">Desenvolvimento Mobile</option>
+                    <option value="web">Tecnologia Web</option>
+                </select>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="aceito" name="aceito" required>
+                    <label for="aceito">Aceito os termos</label>
+                </div>
+
+                <button type="submit" class="btn-inscrever">Inscrever-se</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 Tech News Today. Todos os direitos reservados.</p>
+        <address> Contato: <a href="mailto:info@technews.com">info@technews.com</a></address>
+    </footer>
+</body>
+</html>
